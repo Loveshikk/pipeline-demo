@@ -17,4 +17,6 @@ jobs:
         run: mkdir files
 
       - name: Copy Files
-        run: cp -r * files/
+        run: |
+          mkdir backup
+          cp README.md backup/
